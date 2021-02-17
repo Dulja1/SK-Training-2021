@@ -13,9 +13,11 @@ ul {
   font-size: 20px;
   color: black;
 }
-li a:visited {
+.list:active {
   color: violet;
 }
-li a:hover {
-  color: teal;
+
+li:hover {
+  color: green;
+  cursor: pointer;
 }
