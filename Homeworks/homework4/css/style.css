@@ -1,0 +1,86 @@
+:root {
+  --base: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: calc(var(--base) * 2 + 8px);
+  width: calc(var(--base) * 2 + 8px);
+  margin: 30px;
+  background-color: grey;
+  float: left;
+  position: relative;
+  border: solid black;
+}
+.container-sm {
+  width: 200px;
+}
+.container-lg {
+  width: calc(var(--base) * 4 + 8px);
+}
+.block {
+  background-color: lightgray;
+  width: var(--base);
+  height: var(--base);
+  position: absolute;
+}
+.block-lg {
+  width: calc(var(--base) * 1.5);
+  height: calc(var(--base) * 1.5);
+}
+.block--1 {
+  background-color: yellow;
+  top: 0;
+  left: 0;
+}
+.block--2 {
+  background-color: brown;
+  top: 0;
+  left: var(--base);
+}
+.block--3 {
+  background-color: green;
+  top: var(--base);
+  left: 0;
+}
+.block--4 {
+  background-color: indigo;
+  top: var(--base);
+  left: var(--base);
+}
+
+.block--5 {
+  background-color: blue;
+  bottom: calc(-1 * var(--base) / 4 * 3);
+  left: calc(-1 * var(--base) / 4 * 3);
+  z-index: -1;
+}
+.block--6 {
+  background-color: blue;
+  left: calc(var(--base) * 0.5);
+  bottom: calc(-1 * var(--base) / 4 * 3);
+  transform: translateX(50%);
+  z-index: 1;
+}
+.block--7 {
+  background-color: blue;
+  right: calc(-1 * var(--base) / 4 * 3);
+  bottom: calc(-1 * var(--base) / 4 * 3);
+  z-index: -1;
+}
+.block--8 {
+  background-color: red;
+  /* margin-left: 30px;
+  margin-top: 30px;
+  height: calc(100% - 60px);
+  width: calc(100% - 60px); */
+  width: auto;
+  height: auto;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+}

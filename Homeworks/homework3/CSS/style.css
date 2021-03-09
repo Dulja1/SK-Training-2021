@@ -1,0 +1,53 @@
+.table1 {
+  width: 75%;
+  border: 1px solid #000000;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+td,
+th {
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+td {
+  height: 50px;
+  width: 33.33%;
+}
+.h200 {
+  height: 200px;
+}
+.table2 {
+  width: 90%;
+  border: 1px solid #000000;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.table2-child {
+  width: 80%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+.w28 {
+  width: 28%;
+}
+.table2-child td {
+  width: 33.33%;
+}
+
+.w60p {
+  width: 60%;
+}
+.h47 {
+  height: 200px;
+}
