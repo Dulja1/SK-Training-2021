@@ -1,0 +1,23 @@
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+    @extend %container;
+  }
+  
+}
+ 
+
+
+
+

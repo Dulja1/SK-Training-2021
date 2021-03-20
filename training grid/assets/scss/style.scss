@@ -1,5 +1,5 @@
-
 @import "../../libs/normalize-scss/sass/normalize/import-now";
+
 @import "skin";
 @import "variables";
 @import "mixins";
@@ -7,6 +7,7 @@
 @import "extends";
 
 @import "common";
+
 @import "header/header";
 @import "header/header-overlay";
 @import "header/header-menu";
@@ -20,3 +21,23 @@
 @import "sections/section-posts";
 
 @import "footer";
+
+
+
+@media (max-width: 992px) {
+}
+h1 {
+  font-size: 1.875rem;
+}
+
+@media (max-width: 768px) {
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+@media (min-height: 691px) {
+}
+
+
+
