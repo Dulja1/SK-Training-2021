@@ -1,0 +1,21 @@
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.title::before {
+  content: open-quote;
+}
+.title::after {
+  content: close-quote;
+}
+ul {
+  font-size: 20px;
+  color: black;
+}
+li a:visited {
+  color: violet;
+}
+li a:hover {
+  color: teal;
+}

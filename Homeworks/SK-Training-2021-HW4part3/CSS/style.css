@@ -1,0 +1,18 @@
+ul {
+  width: 480px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  border: 1px solid black;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding-top: 9px;
+  background-color: rgb(199, 199, 199);
+}
+li:nth-child(3),
+li:nth-child(7) {
+  background-color: rgb(126, 196, 126);
+}
