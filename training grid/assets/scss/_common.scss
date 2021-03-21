@@ -1,14 +1,24 @@
-
 * {
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.75rem;
   font-weight: 300;
   font-family: $font-header;
   text-align: center;
   letter-spacing: 0.08em;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+
+  @include md {
+    font-size: 1.875rem;
+  }
 }
 
 html {
@@ -26,28 +36,46 @@ a {
 
 .btn {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   transition: background-color 0.5s;
   letter-spacing: 0.1em;
 }
 
 .btn--light {
-  height: 60px;
-  min-width: 250px;
-  font-style: 1.125rem;
   background-color: rgba($color-primary, 0.1);
   border: 2px solid $color-light;
+
+  @include lg-min {
+    min-width: 250px;
+    height: 60px;
+    font-size: 1.125rem;
+  }
+
+  @include lg-md {
+    min-width: 200px;
+    height: 50px;
+  }
+
+  @include md {
+    min-width: 170px;
+    height: 40px;
+  }
 }
 
 .btn--primary {
-  min-width: 350px;
   height: 60px;
-  font-style: 1.125rem;
+  font-size: 1.125rem;
   background-color: rgba($color-primary, 0.8);
   border: 2px solid $color-primary;
+
+  @include sm-min {
+    min-width: 350px;
+  }
+
+  @include sm {
+    min-width: 100%;
+  }
 }
 
 .btn:hover {
