@@ -14,32 +14,26 @@
   margin-bottom: $gap;
 
   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-  gap: $gap / 2;
   @include lg-min {
-    padding: $gap / 2;
-
+    gap: $gap / 2;
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
   }
   @include lg-md {
-    padding: $gap / 2;
-
+    gap: $gap / 2;
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
   }
   @include md-sm {
-    padding: $gap / 2;
-
+    gap: $gap / 2;
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
   }
   @include sm {
-    padding: $gap;
-
+    gap: $gap;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
   }
 }
 
 .skills__actions {
   display: flex;
-
   justify-content: center;
 }
 
@@ -114,14 +108,13 @@
 
 .skill-item__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   height: 100%;
   padding: $gap;
 
   transform: color 0.5s;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .skill-item {

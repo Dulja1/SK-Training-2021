@@ -9,42 +9,50 @@
       display: none;
     }
     @include md {
+      position: relative;
+
       width: 30px;
       height: 22.5px;
-      position: relative;
       margin: $gap 0;
-      transform: rotate(0deg);
-      transition: 0.5s ease-in-out;
+
       cursor: pointer;
+      transition: 0.5s ease-in-out;
+      transform: rotate(0deg);
     }
   }
   &__list {
     // margin: -109px (-$gap) 0 0;
     margin: 0 (-$gap) 0 0;
-    padding: 0px;
+    padding: 0;
 
     list-style: none;
 
     letter-spacing: 0.09em;
-    font-size: 1.125rem;
 
-    &.active {
-      display: block !important;
-    }
+    font-size: 1.125rem;
 
     @include md-min {
       display: grid;
       justify-content: end;
+
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     }
     @include md {
       position: absolute;
-      display: none;
-      background-color: rgba($color-gray-dark, 0.9);
-      text-align: right;
       top: 100%;
       right: $gap * 2;
+
+      display: none;
+
+      text-align: right;
+
+      background-color: rgba($color-gray-dark, 0.9);
+
       @include box-shadow;
+    }
+
+    &.active {
+      display: block !important;
     }
   }
 
@@ -59,6 +67,7 @@
     padding: $gap ($gap / 2);
 
     transition: color 0.5s;
+
     @include md-min {
       text-align: center;
     }
@@ -74,22 +83,24 @@
 // }
 
 .header-navbar__btn span {
-  display: block;
   position: absolute;
-  height: 3px;
-  width: 100%;
-  background: $color-light;
-  border-radius: 3px;
-  opacity: 1;
   left: 0;
 
-  transform: rotate(0deg);
+  display: block;
+
+  width: 100%;
+  height: 3px;
 
   transition: 0.25s ease-in-out;
+  transform: rotate(0deg);
+
+  opacity: 1;
+  border-radius: 3px;
+  background: $color-light;
 }
 
 .header-navbar__btn span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .header-navbar__btn span:nth-child(2) {
@@ -102,15 +113,18 @@
 
 .header-navbar__btn.active span:nth-child(1) {
   top: 9px;
+
   transform: rotate(135deg);
 }
 
 .header-navbar__btn.active span:nth-child(2) {
-  opacity: 0;
   left: -30px;
+
+  opacity: 0;
 }
 
 .header-navbar__btn.active span:nth-child(3) {
   top: 9px;
+
   transform: rotate(-135deg);
 }
