@@ -16,7 +16,6 @@
         <a href="../index.html" style="color: white;">HOME</a>
         <a href="catalog.html" style="color: white;">CATALOG</a>
         <a href="gallery.html" style="color: white;">GALLERY</a>
-        <a href="images.html" style="color: white;">IMAGES</a>
         <a href="articles.html" style="color: white;">ARTICLES</a>
         <a href="contacts.html" style="color: white;">CONTACTS</a>
         <a href="registration.html" style="color: white;">REGISTRATION</a>
@@ -28,5 +27,89 @@
 
 <body>
   <h1>Форма регистрации</h1>
-  <form action="register.php" method="post"></form>
+  <form action="register.php" method="post">
+    <fieldset>
+      <legend>Поля обязательные для заполнения</legend>
+      <div class="avatar">
+        <div class="foto-image"></div>
+        <label class="foto-button" for="foto">Загрузить фото
+          <input class="foto-title" type="file" name="foto" value="">
+        </label>
+      </div>
+      <div class="about">
+
+        <div class="about-name">
+
+          <label for="">Фамилия
+            <input type="text" name="Surname" value="">
+          </label>
+          <label for="">Имя
+            <input type="text" name="name" value="">
+          </label>
+          <label for="">Отчество
+            <input type="text" name="fathername" value="">
+          </label>
+        </div>
+
+        <div class="about-pass">
+          <label for="email">E-mail
+            <input type="email" name="email" value="">
+          </label>
+          <label for="password">Пароль
+            <input type="password" name="password" value="password">
+          </label>
+          <div class="about-site">
+            <label for="site">Ваш сайт
+              <input type="site" name="site" value="mysite.name">
+            </label>
+          </div>
+        </div>
+        </label>
+        <div class="about-gender">
+          <label for="gender-block">Пол</label>
+          <input type="radio" name="gender" value="Пол"> Мужчина
+          <input type="radio" name="gender" value="Пол"> Женщина
+          <input type="radio" name="gender" value="Пол"> Не определился
+        </div>
+        <div class="about-date">
+          <label for="date">Дата вашего рождения</label>
+          <input type="date" name="date">
+        </div>
+      </div>
+
+
+    </fieldset>
+    <fieldset>
+      <legend>Любимая кухня</legend>
+      <label for="kitchen"></label>
+
+      <div>
+        <label for="gender-block">Пол</label>
+        <input type="checkbox" name="gender" value="Пол"> Американская
+        <input type="checkbox" name="gender" value="Пол"> Итальянская
+        <input type="checkbox" name="gender" value="Пол"> Японская
+      </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>О себе</legend>
+      <div>
+        <label for="about">
+          <textarea name="text" cols="100" rows="10"></textarea>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Подтверждение</legend>
+      <label for="reg">
+        <input type="submit" value="Зарегистрироваться">
+        <input type="reset" value="Очистить форму">
+      </label>
+    </fieldset>
+  </form>
+
+
 </body>
+<footer class="footer">
+  <div class="footer__copyright">&copy; Super-Puper Corporation</div>
+</footer>
